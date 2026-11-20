@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ItemsControlWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="ItemsControl WPF" Height="450" Width="800">
+    
+    <Grid Margin="10">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <ItemsControl>
+                <system:String>ItemsControl Item #1</system:String>
+                <system:String>ItemsControl Item #2</system:String>
+                <system:String>ItemsControl Item #3</system:String>
+                <system:String>ItemsControl Item #4</system:String>
+                <system:String>ItemsControl Item #5</system:String>
+            </ItemsControl>
+        </ScrollViewer>
     </Grid>
+    
 </Window>
